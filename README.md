@@ -13,23 +13,9 @@ Constraints: No data loss, no API change, and no downtime.
 Implement a Tiered Storage Architecture using Azure Cosmos DB (Hot Tier) + Azure Blob Storage (Cold Tier) with an Azure Function-based archival process and a transparent read-through mechanism.
 
 🏗️ Architecture Diagram
-+---------------------+
-|   API Layer         |
-|  (No Change)        |
-+----------+----------+
-           |
-           v
-+------------------------+
-| Azure Function Proxy   | <--------+
-| (Read/Write Wrapper)   |          |
-+----------+-------------+          |
-           |                        |
-     +-----+--------+               |
-     |              |               |
-     v              v               |
-Cosmos DB      Blob Storage <-------+
-(Hot Tier)     (Cold Tier for archive)
-(Current)       (JSON files or Avro/Parquet)
+
+<img width="317" height="380" alt="image" src="https://github.com/user-attachments/assets/12253854-2a85-4a1e-a35a-ef48529a0954" />
+
 
 
 🧩 Key Components
