@@ -88,6 +88,7 @@ def archive_old_records():
 
 
 💰 Cost Optimization Benefits
+
 A] Tier	
   Cosmos DB		
   Blob Storage		
